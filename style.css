@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    height: 100vh;
+    background: url('hero-art.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#about {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#carousel {
+    background-color: #f7f7f7;
+    padding: 4rem 2rem;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.carousel-item:hover .carousel-caption {
+    display: block;
+}
+
+#cta {
+    background-color: #ececec;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-form input, .cta-form button {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cta-form button {
+    background-color: #b88a44;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-form button:hover {
+    background-color: #a07a3a;
+}
+
+#articles {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.articles-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.article {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.article a {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #b88a44;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-links a {
+    color: #b88a44;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    margin-top: 1rem;
+}
+
+/* Apparition au scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
